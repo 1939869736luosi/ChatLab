@@ -1,5 +1,41 @@
 [
   {
+    "version": "0.14.0",
+    "date": "2026-03-28",
+    "summary": "Add API import/export and preset prompts, improve Overview and settings flows, and fix message deduplication, AI conversation flow, and daily trend display.",
+    "changes": [
+      {
+        "type": "feat",
+        "items": [
+          "Add API import",
+          "Add API export",
+          "Let preset questions send immediately when selected",
+          "Add a Settings option for the default tab when opening a chat session",
+          "Improve the Overview page styling",
+          "Refine the overall UI and the API service settings screen",
+          "Improve identity cards and assistant selection interactions"
+        ]
+      },
+      {
+        "type": "fix",
+        "items": [
+          "Fix false positives in message deduplication and unify empty-string deduplication behavior",
+          "Fix AI conversation flow issues and frontend type-check errors",
+          "Add a fallback default assistant for edge cases",
+          "Fix daily message trends not rendering"
+        ]
+      },
+      {
+        "type": "refactor",
+        "items": ["Clean up legacy typing issues across the parser, worker, RAG, and merger modules"]
+      },
+      {
+        "type": "chore",
+        "items": ["Add a skill for generating assistant configurations"]
+      }
+    ]
+  },
+  {
     "version": "0.13.0",
     "date": "2026-03-16",
     "summary": "Assistant Mode is here with skills in chat, quick input actions, improved chat and settings UI, Traditional Chinese and Japanese support, UI refinements, and multiple stability fixes.",
